@@ -12,21 +12,8 @@ public class App
 
     public static void main(String[] args) {
         System.out.println(new App().getMessage());
-        // New Date time package
-		LocalDate currentLocalDate = LocalDate.now();
-		System.out.println("currentLocalDate - yyyy-MM-dd - " + currentLocalDate);
-
-		// stream is an iterator whose role is to accept a set of actions to apply on
-		// each of the elements it contains.
-		int sum = Arrays.stream(new int[] { 1, 2, 3, 4 }).filter(i -> i > 2).map(i -> i * 3).sum();
-		System.out.println("Result of Stream :" + sum);
-
-		// Optional Class
-		int min = Arrays.stream(new int[] { 1, 2, 3, 4, 5 }).min().orElse(0);
-
-		// DoubleFunction
-		DoubleFunction<Integer> bf1 = a -> (int) (a * 11);
-		System.out.println("Result of DoubleFunction :" + bf1.apply(3.2));		
+        
+	System.out.println("Lamda Expression Not Supported");		
     }
 
     private final String getMessage() {
